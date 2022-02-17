@@ -50,7 +50,7 @@ app.post("/:collName", (request, response, next) => {
     });
 })
 //make port
-const port = process.env.PORT || 8000;
+const port = process.env.PORT || 3000;
 //run the server
 app.listen(port, () => {
     console.log(`running on port ${port}`);
