@@ -108,10 +108,7 @@
                 <button class="modal-close is-large" aria-label="close" v-on:click="closeOgModal">
                 </button>
               </header>
-              <div class="d-flex align-items-center justify-content-between mb-5 p-2 border">
-                <h5 style="font-size:20px;color:white">Total Amount</h5>
-                <h6 style="font-size:20px;color:white" v-if="total > 0"> ₦{{total}} </h6>
-              </div>
+              
               <section class="modal-card-body">
               <div v-if="total > 0" class="bg-light">
                 <div v-for="item in cart" class=" p-2 rounded mb-2" style="box-shadow: 0px 2px 5px rgb(128, 128, 128);">
@@ -131,6 +128,10 @@
                 </div>
               </div>
             </section>
+              <div class="d-flex align-items-center justify-content-between mb-0 p-2">
+                <h5 style="font-size:20px;color:white">Total Amount</h5>
+                <h6 style="font-size:20px;color:white" v-if="total > 0"> ₦{{total}} </h6>
+              </div>
             <footer class="modal-card-footer">
               <button v-if="total > 0" class="btn btn-dark btn-block" v-on:click="checkoutModal">Checkout</button>
             </footer>
