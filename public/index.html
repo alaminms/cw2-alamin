@@ -69,7 +69,7 @@
                   
                   <strong>Price: </strong> <span class="filterable-attribute">₦ {{lesson.price}}</span>
                   
-                  <strong>Spaces: </strong> <span class="filterable-attribute">{{lesson.spaces}}</span>
+                  <strong>Available: </strong> <span class="filterable-attribute">{{lesson.available}}</span>
                 </div>
                 <div>
                   <img :src="lesson.img" alt="lesson Image" width="100" style="margin-left:  190px; " />
@@ -78,7 +78,7 @@
               <div class="text-center h-25">
                 
                 <button
-                  v-if="lesson.spaces > 0"
+                  v-if="lesson.available > 0"
                   class="btn btn-sm btn-dark"
                   @click="addToCart(lesson)"
                 >
