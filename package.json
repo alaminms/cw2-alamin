@@ -1,0 +1,26 @@
+{
+  "name": "alaminms",
+  "version": "1.0.0",
+  "description": "",
+  "main": "node app.js",
+  "dependencies": {
+    "express": "^4.17.2",
+    "mongodb": "^4.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alaminms/cw2-alamin.git"
+  },
+  "author": "alaminms",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alaminms/cw2-alamin/issues"
+  },
+  "homepage": "https://github.com/alaminms/cw2-alamin#readme"
+}
