@@ -103,18 +103,18 @@
           <div id="ogmodal" class="modal">
             <div class="modal-background"></div>
             <div class="modal-card">
-              <header class="modal-card-head">
-                <p class="modal-card-title">Cart</p>
+              <header class="modal-card-head bg-dark text-white">
+                <p class="modal-card-title">My Cart</p>
                 <button class="modal-close is-large" aria-label="close" v-on:click="closeOgModal">
                 </button>
               </header>
               <div class="d-flex align-items-center justify-content-between mb-5 p-2 border">
-                <h5 style="font-size:20px;color:white">Total</h5>
+                <h5 style="font-size:20px;color:white">Total Amount</h5>
                 <h6 style="font-size:20px;color:white" v-if="total > 0"> ₦{{total}} </h6>
               </div>
               <section class="modal-card-body">
               <div v-if="total > 0" class="bg-light">
-                <div v-for="item in cart" class=" p-2 rounded" style="box-shadow: 0px 2px 5px rgb(128, 128, 128);">
+                <div v-for="item in cart" class=" p-2 rounded mb-2" style="box-shadow: 0px 2px 5px rgb(128, 128, 128);">
                   <div class="row">
                     <div class="col-lg-2 ">
                       <img :src="item.img" alt="" width="40">
@@ -132,7 +132,7 @@
               </div>
             </section>
             <footer class="modal-card-footer">
-              <button v-if="total > 0" class="btn btn-dark" v-on:click="checkoutModal">Checkout</button>
+              <button v-if="total > 0" class="btn btn-dark btn-block" v-on:click="checkoutModal">Checkout</button>
             </footer>
             </div>
             <!--/div-->
@@ -144,18 +144,18 @@
           <div class="modal-background"></div>
           <div class="modal-card">
             <header class="modal-card-head">
-              <h5 class="modal-card-title">Before Checkout Please Provide Following....
+              <h5 class="modal-card-title">Fill in the form to complete your purchase....
               </h5>
               <button class="delete" aria-label="close" v-on:click="closeModal"></button>
             </header>
             <div class="modal-card-body">
               <div class="form-group">
-                <label for="name">Full Name</label>
+                <label for="name">Name</label>
                 <div class="input-group">
-                  <div class="input-group-prepend">
+<!--                   <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroupPrepend1"><i class="fas fa-user"></i></span>
-                  </div>
-                  <input type="text" class="form-control" id="name" placeholder="Enter your name"
+                  </div> -->
+                  <input type="text" class="form-control" id="name" placeholder="Full name"
                     v-model="person.name" @keypress="stopNumericInput" aria-describedby="inputGroupPrepend1"
                     required>
                 </div>
@@ -163,10 +163,10 @@
               <div class="form-group">
                 <label for="phone">Phone No.</label>
                 <div class="input-group">
-                  <div class="input-group-prepend">
+<!--                   <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroupPrepend2"><i class="fas fa-phone"></i></span>
-                  </div>
-                  <input type="text" class="form-control" id="phone" placeholder="i.e +234xxxx..."
+                  </div> -->
+                  <input type="text" class="form-control" id="phone" placeholder="Phone number"
                     v-model="person.phone" @keypress="stopAlphabetsInput" aria-describedby="inputGroupPrepend2"
                     required>
                 </div>
