@@ -43,7 +43,7 @@
     <div class="container-fluid">
       <div class="row">
         <!-- Filters -->
-        <div class="col-lg-2 p-4 mt-4 bg-light text-dark">
+        <div class="col-lg-2 p-4 mt-4 bg-dark text-white">
           <h5>Sort By</h5>
           <ul class="list-unstyled">
             <li v-for="filter in filters" :key="filter.id" class="d-flex align-items-center justify-content-between">
@@ -69,13 +69,13 @@
         <div class="col-lg-10 p-4 " style="background-color: rgb(252, 252, 252);">
           <div class="row">
             <div v-for="lesson in lessons" :key="lesson._id" class="col-lg-4  p-2 rounded m-2 single-lesson mx-auto">
-              <div class="w-90 h-80 mx-auto row shadow-sm rounded border py-2">
+              <div class="w-90 h-80 mx-auto row style="background-color:#dee2e6" shadow-sm rounded border py-2">
                 <div class="col-7 h-75">
                   <ul class="list-unstyled">
                     <li class="filterable-attribute"><strong>Subject: </strong>{{lesson.subject}}</li>
                     <li class="filterable-attribute"><strong>Location: </strong>{{lesson.location}}</li>
                     <li class="filterable-attribute"><strong>Price: </strong>₦ {{lesson.price}}</li>
-                    <li class="filterable-attribute"><strong>Spaces: </strong>{{lesson.spaces}}</li>
+                    <li class="filterable-attribute"><strong>Available: </strong>{{lesson.spaces}}</li>
                   </ul>
                 </div>
                 <div class="col-5 h-100">
