@@ -22,11 +22,11 @@
           <a class="navbar-brand fw-bold text-white sitename">{{sitename}}</a>
           <div class="group d-flex me-2 justify-content-between" style="width:24%">
             <form class="d-flex">
-              <input type="text" class="form-control" @keyup="searching" placeholder="Search..."
+              <input type="text" class="form-control" @keyup="searching" style="border-radius:50px;border:0" placeholder="Search..."
                 aria-describedby="inputGroupPrepend2">
-              <div class="input-group-append">
+<!--               <div class="input-group-append">
                 <span class="input-group-text" id="inputGroupPrepend2"><i class="fas fa-search"></i></span>
-              </div>
+              </div> -->
             </form>
             <button type=button v-if="cart.length == 0" disabled>
               <span class="fas fa-cart-plus"></span>
@@ -120,7 +120,7 @@
                       <h5 class="m-0">{{item.subject}} <small>(₦ {{item.price}})</small></h5>
                       <p class="m-0">{{item.location}}</p>
                     </div>
-                    <div class="col-2 float-right">
+                    <div class="col-2 mr-4">
                       <button class="btn btn-danger" @click="removeFromCart(item)"><i
                           class="fas fa-trash-alt"></i></button>
                     </div>
