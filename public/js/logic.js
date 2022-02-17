@@ -6,7 +6,7 @@ const app = Vue.createApp({
         name: null,
         phone: null,
       },
-      sitename: "After School Activities",
+      sitename: "sheik gumi academy",
       filters: [{
           id: 1,
           name: "Subject",
