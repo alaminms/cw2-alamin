@@ -131,7 +131,7 @@ const app = Vue.createApp({
   created() {
     const vm = this
     console.log("getting lessons from the server...");
-    fetch("https://toritorilane.herokuapp.com/lessons").then(
+    fetch("https://cws2main.herokuapp.com/lesson").then(
       function (res) {
         res.json().then(
           function (json) {
@@ -204,7 +204,7 @@ const app = Vue.createApp({
       let msg = `Thanks ${vm.person.name} your total price is .. (₦ ${vm.total} naira only)`;
       alert(msg);
       vm.resetVariable();
-      fetch('https://kidocw2.herokuapp.com/orders', {
+      fetch('https://cws2main.herokuapp.com/orders', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
