@@ -151,16 +151,16 @@ const app = Vue.createApp({
       }
     },
     showModal() {
-      document.getElementById('ogmodal').classList.toggle('is-active')
+      document.getElementById('Backdrop').classList.toggle('is-active')
     },
     checkoutModal() {
-      document.getElementById('checkout-modal').classList.toggle('is-active')
+      document.getElementById('checkoutModal').classList.toggle('is-active')
     },
     closeOgModal() {
-      document.getElementById('ogmodal').classList.remove('is-active')
+      document.getElementById('Backdrop').classList.remove('is-active')
     },
     closeModal() {
-      document.getElementById('checkout-modal').classList.remove('is-active')
+      document.getElementById('checkoutModal').classList.remove('is-active')
     },
 
     searching(event) {
