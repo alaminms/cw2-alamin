@@ -42,88 +42,7 @@ const app = Vue.createApp({
         },
       ],
       lessons: [],
-      // lessons: [
-      //   {
-      //     id: 1,
-      //     img: "https://img.icons8.com/external-flat-icons-maxicons/85/000000/external-biology-faculty-flat-flat-icons-maxicons.png",
-      //     subject: "BIOLOGY",
-      //     location: "Minnesota",
-      //     price: 5000,
-      //     spaces: 5,
-      //   },
-      //   {
-      //     id: 2,
-      //     img: "https://img.icons8.com/external-prettycons-flat-prettycons/85/000000/external-maths-education-prettycons-flat-prettycons-1.png",
-      //     subject: "MATHS",
-      //     location: "Mississippi",
-      //     price: 2100,
-      //     spaces: 5,
-      //   },
-      //   {
-      //     id: 3,
-      //     img: "https://img.icons8.com/external-prettycons-lineal-color-prettycons/85/000000/external-chemistry-education-prettycons-lineal-color-prettycons.png",
-      //     subject: "CHEMISTRY",
-      //     location: "LONDON",
-      //     price: 5400,
-      //     spaces: 5,
-      //   },
-      //   {
-      //     id: 4,
-      //     img: "https://img.icons8.com/color/85/000000/language.png",
-      //     subject: "Language",
-      //     location: "NEW YORK",
-      //     price: 80,
-      //     spaces: 5,
-      //   },
-      //   {
-      //     id: 5,
-      //     img: "https://img.icons8.com/external-flatarticons-blue-flatarticons/85/000000/external-violin-valentines-day-flatarticons-blue-flatarticons.png",
-      //     subject: "MUSIC",
-      //     location: "BRISTOL",
-      //     price: 900,
-      //     spaces: 5,
-      //   },
-      //   {
-      //     id: 6,
-      //     img: "https://img.icons8.com/external-flat-icons-pause-08/100/000000/external-chemistry-education-flat-icons-pause-08.png",
-      //     subject: "CHEMISTRY",
-      //     location: "Manchester",
-      //     price: 70,
-      //     spaces: 5,
-      //   },
-      //   {
-      //     id: 7,
-      //     img: "https://img.icons8.com/external-justicon-lineal-color-justicon/85/000000/external-football-sport-justicon-lineal-color-justicon.png",
-      //     subject: "FOOTBALL",
-      //     location: "Brazil",
-      //     price: 2220,
-      //     spaces: 5,
-      //   },
-      //   {
-      //     id: 8,
-      //     img: "https://img.icons8.com/external-justicon-lineal-color-justicon/85/000000/external-cricket-sport-justicon-lineal-color-justicon.png",
-      //     subject: "CRICKET",
-      //     location: "INDIA",
-      //     price: 5100,
-      //     spaces: 5,
-      //   },
-      //   {
-      //     id: 9,
-      //     img: "https://img.icons8.com/external-becris-flat-becris/85/000000/external-art-literary-genres-becris-flat-becris.png",
-      //     subject: "ART & CRAFT",
-      //     location: "Accra",
-      //     price: 9000,
-      //     spaces: 5,
-      //   },
-      //   {
-      //     id: 10,
-      //     img: "https://img.icons8.com/external-icongeek26-linear-colour-icongeek26/85/000000/external-geography-geography-icongeek26-linear-colour-icongeek26.png",
-      //     subject: "Geography",
-      //     location: "Russia",
-      //     price: 4020,
-      //     spaces: 5,
-      //   }
-      // ],
+     
       cart: [],
       total: 0,
     };
@@ -150,7 +69,7 @@ const app = Vue.createApp({
         course.spaces--;
       }
     },
-   showModal() {
+    showModal() {
       document.getElementById('ogmodal').classList.toggle('is-active')
     },
     checkoutModal() {
@@ -198,7 +117,6 @@ const app = Vue.createApp({
       this.cart = [];
       this.total = 0;
     },
-
     checkout() {
       const vm = this
       let msg = `Thanks ${vm.person.name} your total price is .. (₦ ${vm.total} naira only)`;
