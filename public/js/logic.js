@@ -131,7 +131,7 @@ const app = Vue.createApp({
   created() {
     const vm = this
     console.log("getting lessons from the server...");
-    fetch("https://cws2main.herokuapp.com/lesson").then(
+    fetch("https://cws2main.herokuapp.com/lessons").then(
       function (res) {
         res.json().then(
           function (json) {
