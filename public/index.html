@@ -20,23 +20,6 @@
       <nav class="navbar navbar-light bg-dark">
         <div class="container-fluid">
           <a class="navbar-brand fw-bold text-white sitename">{{sitename}}</a>
-          <div class="group d-flex me-2 justify-content-between" style="width:24%">
-            <form class="d-flex">
-              <input type="text" class="form-control" @keyup="searching" style="border-radius:50px;border:0" placeholder="Search..."
-                aria-describedby="inputGroupPrepend2">
-<!--               <div class="input-group-append">
-                <span class="input-group-text" id="inputGroupPrepend2"><i class="fas fa-search"></i></span>
-              </div> -->
-            </form>
-            <button type=button v-if="cart.length == 0" disabled>
-              <span class="fas fa-cart-plus"></span>
-
-            </button>
-            <button v-else class="btn btn-primary" v-on:click="showModal">
-              <span class="fas fa-cart-plus"></span>
-            </button>
-
-          </div>
         </div>
       </nav>
     </div>
@@ -100,6 +83,23 @@
             </div>
 
           </div>
+           <div class="group d-flex me-2 justify-content-between" style="width:24%">
+            <form class="d-flex">
+              <input type="text" class="form-control" @keyup="searching" style="border-radius:50px;border:0" placeholder="Search..."
+                aria-describedby="inputGroupPrepend2">
+<!--               <div class="input-group-append">
+                <span class="input-group-text" id="inputGroupPrepend2"><i class="fas fa-search"></i></span>
+              </div> -->
+            </form>
+            <button type=button v-if="cart.length == 0" disabled>
+              <span class="fas fa-cart-plus"></span>
+
+            </button>
+            <button v-else class="btn btn-primary" v-on:click="showModal">
+              <span class="fas fa-cart-plus"></span>
+            </button>
+
+          </div>
           <div id="ogmodal" class="modal">
             <div class="modal-background"></div>
             <div class="modal-card">
@@ -145,7 +145,7 @@
           <div class="modal-background"></div>
           <div class="modal-card">
             <header class="modal-card-head">
-              <h5 class="modal-card-title">Fill in the form to complete your purchase....
+              <h5 class="modal-card-title">complete details to sign in
               </h5>
               <button class="delete" aria-label="close" v-on:click="closeModal"></button>
             </header>
