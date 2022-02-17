@@ -18,7 +18,7 @@ const MongoClient = require("mongodb").MongoClient;
 //create database instance
 let database;
 //connect to cluster
-MongoClient.connect("mongodb+srv://root:root@cluster0.esda5.mongodb.net",(err, cli) => {
+MongoClient.connect("mongodb+srv://root:root@cws2main.7bghg.mongodb.net/test",(err, cli) => {
     //connect to the database
     database = cli.db("lesson");
 });
