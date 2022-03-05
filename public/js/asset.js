@@ -47,7 +47,7 @@ const app = Vue.createApp({
       total: 0,
     };
   },
-  //the search funtion from backend
+ 
   created() {
     const vm = this
     console.log("getting lessons from the server...");
