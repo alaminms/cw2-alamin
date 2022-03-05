@@ -34,7 +34,7 @@ app.get("/", (request, response, next) => {
     next();
 });
 
-// route to GET all items in a collection
+// route to PUT all items in a collection
 app.get("/:collName", (request, response, next) => {
     request.collection.find({}).toArray((err, res) => {
         if (err) return next(err);
